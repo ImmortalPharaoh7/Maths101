@@ -1,0 +1,50 @@
+package com.abdallahmeebed.maths101.fragments;
+
+import android.app.Fragment;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.abdallahmeebed.maths101.R;
+import com.abdallahmeebed.maths101.WelcomeActivity;
+
+public class NumberQuestionFragment extends Fragment {
+
+    TextView questionTextView = (TextView) getView().findViewById(R.id.numberQuestionPrompt);
+
+    private int answer;
+    private boolean valableClick = true;
+
+    // setting up the question
+    public void setupQuestion(String question, int answer){
+        questionTextView.setText(question);
+        this.answer = answer;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.number_question_fragment, container, false);
+    }
+
+    public void checkAnswer (){
+        if (valableClick) {
+           try{
+               EditText answerEditText = getView().findViewById(R.id.numberQuestionAnswer);
+               int answerUser = Integer.parseInt(answerEditText.getText().toString());
+
+               if (answerUser == answer) {
+                   valableClick = false;
+                   Toast.makeText(getActivity(), R.string.correct, Toast.LENGTH_LONG).show();
+               }
+           }catch (Exception e){
+               System.out.printf(e.toString());
+               Toast.makeText(getActivity(), R.string.emtpyNumber, Toast.LENGTH_SHORT).show();
+           }
+        }
+    }
+}

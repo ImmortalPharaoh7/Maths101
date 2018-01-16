@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name" translatable="false">Maths101</string>
+    <string name="title" translatable="false">Maths 101</string>
+    <string name="playButton">Play</string>
+    <string name="instructionsButton">Instructions</string>
+    <string name="creditsButton">Credits</string>
+    <string name="optionsButton">Options</string>
+    <string name="beginnerButton">Beginner</string>
+    <string name="intermediateButton">Intermediate</string>
+    <string name="expertButton">Expert</string>
+    <string name="backButton">Back</string>
+    <string name="fractionsButton">Fractions</string>
+    <string name="proportionalityButton">Proportionality</string>
+    <string name="firstDegreeEquationButton">First Degree Equations</string>
+    <string name="secondDegreeEquationButton">Second Degree Equations</string>
+    <string name="trigonometryButton">Trigonometry</string>
+    <string name="greatestCommonDividerButton">Greatest Common Divider</string>
+    <string name="trigonometricFunctionsButton">Trigonometric Functions</string>
+    <string name="probabilityButton">Probability</string>
+    <string name="calculatingInterestsButton">Calculating Interests</string>
+    <string name="lifeQuestionsButton">Real Life Situations</string>
+    <string name="title_activity_beginner_life">BeginnerLifeActivity</string>
+    <string name="question30Button">The Mysterious Urn</string>
+    <string name="question30Prompt">An urn contains an even number of balls; half of the balls in the urn are white and the other half black. If three balls are drawn at the same time from the urn, the probability of drawing 3 balls of the same color is 20%. How many balls are there in the urn before any balls are drawn?</string>
+    <string name="validateButton">Validate</string>
+    <string name="correct">Correct!</string>
+    <string name="emtpyNumber">Please enter a number</string>
+</resources>
