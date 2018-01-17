@@ -40,10 +40,12 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:background="@android:color/white"
+                android:layout_marginTop="20dp"
                 android:ems="10"
+                android:hint="@string/hintNumber"
                 android:inputType="number"
-                android:labelFor="@id/numberQuestionAnswer" />
+                android:labelFor="@id/numberQuestionAnswer"
+                android:textColor="@android:color/background_dark" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -58,15 +60,18 @@
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@android:color/holo_green_dark"
+                    android:onClick="welcomeButtonPressed"
                     android:text="@string/validateButton" />
 
                 <Button
+                    android:id="@+id/backNumberQuestion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@android:color/holo_red_dark"
+                    android:onClick="welcomeButtonPressed"
                     android:text="@string/backButton" />
             </LinearLayout>
 

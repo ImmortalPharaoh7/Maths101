@@ -20,22 +20,25 @@ public class NumberQuestionFragment extends Fragment {
     TextView questionTextView;
 
     private int answer;
+    private String question = "Empty";
     private boolean valableClick = true;
 
     // setting up the question
     public void setupQuestion(String question, int answer){
-        questionTextView.setText(question);
+        this.question = question;
         this.answer = answer;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.number_question_fragment, container, false);
-        questionTextView = (TextView) view.findViewById(R.id.numberQuestionPrompt);
+        questionTextView = view.findViewById(R.id.numberQuestionPrompt);
+        questionTextView.setText(question);
         return view;
     }
 
     public void checkAnswer (){
+        System.out.println("Checking the answer");
         if (valableClick) {
            try{
                EditText answerEditText = getView().findViewById(R.id.numberQuestionAnswer);
@@ -43,7 +46,7 @@ public class NumberQuestionFragment extends Fragment {
 
                if (answerUser == answer) {
                    valableClick = false;
-                   Toast.makeText(getActivity(), R.string.correct, Toast.LENGTH_LONG).show();
+                   Toast.makeText(getActivity(), getString(R.string.correct), Toast.LENGTH_LONG).show();
                }else {
                    // goes to the incorrect answer fragment
                    FragmentManager fragmentManager = getFragmentManager();
@@ -54,7 +57,7 @@ public class NumberQuestionFragment extends Fragment {
                }
            }catch (Exception e){
                System.out.printf(e.toString());
-               Toast.makeText(getActivity(), R.string.emtpyNumber, Toast.LENGTH_SHORT).show();
+               Toast.makeText(getActivity(), getString(R.string.emptyNumber), Toast.LENGTH_SHORT).show();
            }
         }
     }

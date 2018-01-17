@@ -24,5 +24,6 @@
     <string name="question30Prompt">An urn contains an even number of balls; half of the balls in the urn are white and the other half black. If three balls are drawn at the same time from the urn, the probability of drawing 3 balls of the same color is 20%. How many balls are there in the urn before any balls are drawn?</string>
     <string name="validateButton">Validate</string>
     <string name="correct">Correct!</string>
-    <string name="emtpyNumber">Please enter a number</string>
+    <string name="emptyNumber">Please enter a number</string>
+    <string name="hintNumber">Enter your answer here</string>
 </resources>
