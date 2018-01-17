@@ -18,7 +18,6 @@ import com.abdallahmeebed.maths101.fragments.WelcomeFragment;
 
 public class  WelcomeActivity extends AppCompatActivity{
 
-    NumberQuestionFragment numberQuestionFragment = new NumberQuestionFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +34,8 @@ public class  WelcomeActivity extends AppCompatActivity{
 
         //setContentView(R.layout.activity_welcome);
     }
+
+    NumberQuestionFragment numberQuestionFragment;
 
     //gets the fragments for all the menu items
     public void welcomeButtonPressed(View view){
@@ -76,6 +77,11 @@ public class  WelcomeActivity extends AppCompatActivity{
             ExpertLifeFragment expertLifeFragment = new ExpertLifeFragment();
             fragmentTransaction.replace(android.R.id.content, expertLifeFragment);
             fragmentTransaction.commit();
+        } else if (view == findViewById(R.id.question1Button)){
+            numberQuestionFragment = new NumberQuestionFragment();
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+            fragmentTransaction.commit();
+            numberQuestionFragment.setupQuestion(Integer.toString(R.string.question30Prompt), 16);
         } else if (view == findViewById(R.id.numberQuestionValidate)){
             numberQuestionFragment.checkAnswer();
         }
