@@ -11,6 +11,7 @@ import com.abdallahmeebed.maths101.fragments.BeginnerFragment;
 import com.abdallahmeebed.maths101.fragments.BeginnerLifeFragment;
 import com.abdallahmeebed.maths101.fragments.ExpertFragment;
 import com.abdallahmeebed.maths101.fragments.ExpertLifeFragment;
+import com.abdallahmeebed.maths101.fragments.InstructionsFragment;
 import com.abdallahmeebed.maths101.fragments.IntermediateFragment;
 import com.abdallahmeebed.maths101.fragments.NumberQuestionFragment;
 import com.abdallahmeebed.maths101.fragments.PlayFragment;
@@ -48,7 +49,7 @@ public class  WelcomeActivity extends AppCompatActivity{
             fragmentTransaction.replace(android.R.id.content, playFragment);
 
         // to main menu
-        }else if (view == findViewById(R.id.backPlayButton)){
+        }else if (view == findViewById(R.id.backPlayButton) || view == findViewById(R.id.backInstructionsButton)){
             WelcomeFragment welcomeFragment = new WelcomeFragment();
             fragmentTransaction.replace(android.R.id.content, welcomeFragment);
         }else if (view == findViewById(R.id.beginnerButton)){
@@ -75,6 +76,9 @@ public class  WelcomeActivity extends AppCompatActivity{
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.numberQuestionValidate)){
             numberQuestionFragment.checkAnswer();
+        } else if (view == findViewById(R.id.instructionsButton)){
+            InstructionsFragment instructionsFragment = new InstructionsFragment();
+            fragmentTransaction.replace(android.R.id.content, instructionsFragment);
         }
 
         fragmentTransaction.commit();
