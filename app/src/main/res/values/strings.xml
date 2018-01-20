@@ -24,7 +24,7 @@
     <string name="question30Prompt">An urn contains an even number of balls; half of the balls in the urn are white and the other half black. If three balls are drawn at the same time from the urn, the probability of drawing 3 balls of the same color is 20%. How many balls are there in the urn before any balls are drawn?</string>
     <string name="validateButton">Validate</string>
     <string name="correct">Correct!</string>
-    <string name="emptyNumber">Please enter a number</string>
+    <string name="emptyNumber">Please enter a number between 0 and (2^32)-1</string>
     <string name="hintNumber">Enter your answer here</string>
     <string name="instructions">Maths 101 is a game about showing different uses of maths in real life situations. Start playing by selecting a level and a subject you want to test your knowledge on. You can later prove your skills by applying your knowledge into real life situations by pressing the \"Real Life Situations\" under the level of your choice.\n\nNote: This game requires you to have at least studied some basics of the question you\'re answering as it doesn\'t go through basic methods. Please round your answers to the 2 decimal places.</string>
     <string name="question31Button">Meet me halfway</string>
@@ -37,4 +37,5 @@
     <string name="question34Prompt">Consider a deck of 63 cards, different from one another. Define a shuffle on the deck as follows: take the first 31 cards of the deck and place them one after the other in between each pair of the remaining 32 cards. After a shuffle, you obtain a new arrangement of the deck. How many times does the shuffle have to be repeated in order to return to the initial arrangement of the cards in the deck?</string>
     <string name="question35Button">Bird problem</string>
     <string name="question35Prompt">A man buys 30 birds for 30 denari. He is able to choose from partridges, pigeons, and sparrows [which are three types of birds; he chooses at least one bird for each type]. A partridge costs 3 denari, a pigeon costs 2 denari, and 2 sparrows cost 1 denaro (i.e. 1 sparrow costs ½ a denaro). How many sparrows did the man buy?</string>
+    <string name="contentDescriptionAnswer">This is the answer to that question, content description is currently work in progress</string>
 </resources>

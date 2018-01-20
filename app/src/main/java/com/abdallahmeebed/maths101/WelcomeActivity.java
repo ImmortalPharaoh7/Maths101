@@ -73,7 +73,7 @@ public class  WelcomeActivity extends AppCompatActivity{
             fragmentTransaction.replace(android.R.id.content, expertLifeFragment);
         } else if (view == findViewById(R.id.question30Button)){
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question30Prompt), 16);
+            numberQuestionFragment.setupQuestion(getString(R.string.question30Prompt), 16, R.drawable.question30);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.numberQuestionValidate)){
             numberQuestionFragment.checkAnswer();

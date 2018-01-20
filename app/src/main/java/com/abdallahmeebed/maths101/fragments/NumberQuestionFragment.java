@@ -19,6 +19,7 @@ public class NumberQuestionFragment extends Fragment {
 
     TextView questionTextView;
 
+    private int answerImageID = 0;
     private double answer;
     private String question = "Empty";
     private boolean valableClick = true;
@@ -27,6 +28,11 @@ public class NumberQuestionFragment extends Fragment {
     public void setupQuestion(String question, double answer){
         this.question = question;
         this.answer = answer;
+    }
+
+    public void setupQuestion(String question, double answer, int answerImageId){
+        setupQuestion(question, answer);
+        this.answerImageID = answerImageId;
     }
 
     @Override
@@ -52,10 +58,15 @@ public class NumberQuestionFragment extends Fragment {
                    FragmentManager fragmentManager = getFragmentManager();
                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                    IncorrectAnswerFragment incorrectAnswerFragment = new IncorrectAnswerFragment();
+                   if (answerImageID != 0) {
+
+                       incorrectAnswerFragment.setAnswerImage(answerImageID);
+                   }
                    fragmentTransaction.replace(android.R.id.content, incorrectAnswerFragment);
                    fragmentTransaction.commit();
+
                }
-           }catch (NullPointerException e){
+           }catch (Exception e){
                Toast.makeText(getActivity(), getString(R.string.emptyNumber), Toast.LENGTH_SHORT).show();
            }
         }
