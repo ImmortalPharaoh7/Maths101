@@ -13,6 +13,6 @@ import com.abdallahmeebed.maths101.R;
 public class ExpertLifeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.exper_life_fragment, container, false);
+        return inflater.inflate(R.layout.expert_life_fragment, container, false);
     }
 }

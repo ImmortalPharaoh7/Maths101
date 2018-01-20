@@ -13,6 +13,7 @@ import com.abdallahmeebed.maths101.fragments.ExpertFragment;
 import com.abdallahmeebed.maths101.fragments.ExpertLifeFragment;
 import com.abdallahmeebed.maths101.fragments.InstructionsFragment;
 import com.abdallahmeebed.maths101.fragments.IntermediateFragment;
+import com.abdallahmeebed.maths101.fragments.IntermediateLifeFragment;
 import com.abdallahmeebed.maths101.fragments.NumberQuestionFragment;
 import com.abdallahmeebed.maths101.fragments.PlayFragment;
 import com.abdallahmeebed.maths101.fragments.WelcomeFragment;
@@ -44,7 +45,7 @@ public class  WelcomeActivity extends AppCompatActivity{
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         // to the play menu
-        if (view == findViewById(R.id.playButton) || view == findViewById(R.id.backBeginnerButton)|| view == findViewById(R.id.backIntermediateButton) || view == findViewById(R.id.backExpertButton) || view == findViewById(R.id.backNumberQuestion)){
+        if (view == findViewById(R.id.playButton) || view == findViewById(R.id.backBeginnerButton)|| view == findViewById(R.id.backIntermediateButton) || view == findViewById(R.id.backExpertButton) || view == findViewById(R.id.backNumberQuestion) || view == findViewById(R.id.backIncorrectLifeButton)){
             PlayFragment playFragment = new PlayFragment();
             fragmentTransaction.replace(android.R.id.content, playFragment);
 
@@ -52,25 +53,25 @@ public class  WelcomeActivity extends AppCompatActivity{
         }else if (view == findViewById(R.id.backPlayButton) || view == findViewById(R.id.backInstructionsButton)){
             WelcomeFragment welcomeFragment = new WelcomeFragment();
             fragmentTransaction.replace(android.R.id.content, welcomeFragment);
-        }else if (view == findViewById(R.id.beginnerButton)){
+        }else if (view == findViewById(R.id.beginnerButton) || view == findViewById(R.id.backBeginnerLifeButton)){
             BeginnerFragment beginnerFragment = new BeginnerFragment();
             fragmentTransaction.replace(android.R.id.content, beginnerFragment);
-        }else if (view == findViewById(R.id.intermediateButton)){
+        }else if (view == findViewById(R.id.intermediateButton) || view == findViewById(R.id.backIntermediateLifeButton)){
             IntermediateFragment intermediateFragment = new IntermediateFragment();
             fragmentTransaction.replace(android.R.id.content, intermediateFragment);
-        }else if (view == findViewById(R.id.expertButton)){
+        }else if (view == findViewById(R.id.expertButton) || view == findViewById(R.id.backExpertLifeButton)){
             ExpertFragment expertFragment = new ExpertFragment();
             fragmentTransaction.replace(android.R.id.content, expertFragment);
         } else if (view == findViewById(R.id.beginnerLifeButton)) {
             BeginnerLifeFragment beginnerLifeFragment = new BeginnerLifeFragment();
             fragmentTransaction.replace(android.R.id.content, beginnerLifeFragment);
         } else if (view == findViewById(R.id.intermediateLifeButton)) {
-            IntermediateFragment intermediateFragment = new IntermediateFragment();
-            fragmentTransaction.replace(android.R.id.content, intermediateFragment);
+            IntermediateLifeFragment intermediateLifeFragment = new IntermediateLifeFragment();
+            fragmentTransaction.replace(android.R.id.content, intermediateLifeFragment);
         } else if (view == findViewById(R.id.expertLifeButton)) {
             ExpertLifeFragment expertLifeFragment = new ExpertLifeFragment();
             fragmentTransaction.replace(android.R.id.content, expertLifeFragment);
-        } else if (view == findViewById(R.id.question1Button)){
+        } else if (view == findViewById(R.id.question30Button)){
             numberQuestionFragment = new NumberQuestionFragment();
             numberQuestionFragment.setupQuestion(getString(R.string.question30Prompt), 16);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
@@ -79,8 +80,27 @@ public class  WelcomeActivity extends AppCompatActivity{
         } else if (view == findViewById(R.id.instructionsButton)){
             InstructionsFragment instructionsFragment = new InstructionsFragment();
             fragmentTransaction.replace(android.R.id.content, instructionsFragment);
+        } else if (view == findViewById(R.id.question31Button)){
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question31Prompt), 2.92);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question32Button)){
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question32Prompt), 4);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question33Button)){
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question33Prompt), 382);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question34Button)){
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question34Prompt), 6);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question35Button)){
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question35Prompt), 22);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         }
-
         fragmentTransaction.commit();
     }
 }

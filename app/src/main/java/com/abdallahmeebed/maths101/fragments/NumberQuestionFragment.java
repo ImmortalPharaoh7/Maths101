@@ -19,12 +19,12 @@ public class NumberQuestionFragment extends Fragment {
 
     TextView questionTextView;
 
-    private int answer;
+    private double answer;
     private String question = "Empty";
     private boolean valableClick = true;
 
     // setting up the question
-    public void setupQuestion(String question, int answer){
+    public void setupQuestion(String question, double answer){
         this.question = question;
         this.answer = answer;
     }
@@ -55,8 +55,7 @@ public class NumberQuestionFragment extends Fragment {
                    fragmentTransaction.replace(android.R.id.content, incorrectAnswerFragment);
                    fragmentTransaction.commit();
                }
-           }catch (Exception e){
-               System.out.printf(e.toString());
+           }catch (NullPointerException e){
                Toast.makeText(getActivity(), getString(R.string.emptyNumber), Toast.LENGTH_SHORT).show();
            }
         }
