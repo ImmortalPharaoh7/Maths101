@@ -100,6 +100,8 @@ public class  WelcomeActivity extends AppCompatActivity{
             numberQuestionFragment = new NumberQuestionFragment();
             numberQuestionFragment.setupQuestion(getString(R.string.question35Prompt), 22);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.greatestCommonDividerButton)) {
+            startActivity(new Intent(this, GCDActivity.class));
         }
         fragmentTransaction.commit();
     }
