@@ -3,11 +3,13 @@ package com.abdallahmeebed.maths101.fragments;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +20,7 @@ import com.abdallahmeebed.maths101.WelcomeActivity;
 public class NumberQuestionFragment extends Fragment {
 
     TextView questionTextView;
+    Button validateButton;
 
     private int answerImageID = 0;
     private double answer;
@@ -40,6 +43,7 @@ public class NumberQuestionFragment extends Fragment {
         View view = inflater.inflate(R.layout.number_question_fragment, container, false);
         questionTextView = view.findViewById(R.id.numberQuestionPrompt);
         questionTextView.setText(question);
+        validateButton = view.findViewById(R.id.numberQuestionValidate);
         return view;
     }
 
@@ -51,24 +55,33 @@ public class NumberQuestionFragment extends Fragment {
                int answerUser = Integer.parseInt(answerEditText.getText().toString());
 
                if (answerUser == answer) {
+
                    valableClick = false;
                    Toast.makeText(getActivity(), getString(R.string.correct), Toast.LENGTH_LONG).show();
+                   validateButton.setBackgroundColor(Color.GRAY);
+                   validateButton.setText(R.string.viewSolution);
                }else {
-                   // goes to the incorrect answer fragment
-                   FragmentManager fragmentManager = getFragmentManager();
-                   FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                   IncorrectAnswerFragment incorrectAnswerFragment = new IncorrectAnswerFragment();
-                   if (answerImageID != 0) {
-
-                       incorrectAnswerFragment.setAnswerImage(answerImageID);
-                   }
-                   fragmentTransaction.replace(android.R.id.content, incorrectAnswerFragment);
-                   fragmentTransaction.commit();
+                   gotoSolution();
 
                }
            }catch (Exception e){
                Toast.makeText(getActivity(), getString(R.string.emptyNumber), Toast.LENGTH_SHORT).show();
            }
+        }else{
+            gotoSolution();
         }
+    }
+
+    public void gotoSolution(){
+        // goes to the incorrect answer fragment
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        IncorrectAnswerFragment incorrectAnswerFragment = new IncorrectAnswerFragment();
+        if (answerImageID != 0) {
+
+            incorrectAnswerFragment.setAnswerImage(answerImageID);
+        }
+        fragmentTransaction.replace(android.R.id.content, incorrectAnswerFragment);
+        fragmentTransaction.commit();
     }
 }

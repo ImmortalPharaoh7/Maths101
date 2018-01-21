@@ -38,4 +38,5 @@
     <string name="question35Button">Bird problem</string>
     <string name="question35Prompt">A man buys 30 birds for 30 denari. He is able to choose from partridges, pigeons, and sparrows [which are three types of birds; he chooses at least one bird for each type]. A partridge costs 3 denari, a pigeon costs 2 denari, and 2 sparrows cost 1 denaro (i.e. 1 sparrow costs ½ a denaro). How many sparrows did the man buy?</string>
     <string name="contentDescriptionAnswer">This is the answer to that question, content description is currently work in progress</string>
+    <string name="viewSolution">View Solution</string>
 </resources>
