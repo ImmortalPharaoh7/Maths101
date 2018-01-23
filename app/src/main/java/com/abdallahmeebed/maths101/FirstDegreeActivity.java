@@ -37,11 +37,8 @@ public class FirstDegreeActivity extends AppCompatActivity {
         questionTextView.setText(String.format(getString(R.string.firstDegreeLine), a1, c1, a2, c2));
 
         // putting unknown in a side, the constants on the other
-        double tempA = a1 - a2;
-        double tempC = c2 - c1;
 
-        aAns = Math.round(((-tempC) / tempA) * 100.0) / 100.0;
-        System.out.println(aAns);
+        aAns = Math.round(100.0 * (a2 - a1) / (c2 - c1)) / 100.0;
     }
 
     public void checkUnknown() {
