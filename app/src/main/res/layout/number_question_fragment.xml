@@ -44,7 +44,7 @@
                 android:background="@color/colorPrimary"
                 android:ems="15"
                 android:hint="@string/hintNumber"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:labelFor="@id/numberQuestionAnswer"
                 android:padding="10dp"
                 android:textColor="@android:color/background_dark" />

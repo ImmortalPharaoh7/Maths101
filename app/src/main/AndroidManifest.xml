@@ -21,6 +21,9 @@
         <activity
             android:name=".GCDActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".FractionsActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

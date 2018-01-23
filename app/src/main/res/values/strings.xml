@@ -41,4 +41,6 @@
     <string name="viewSolution">View Solution</string>
     <string name="gcdPrompt">Find the Greatest Common Divider (GCD) of these two numbers:</string>
     <string name="incorrectGCD">Incorrect! The answer was %d</string>
+    <string name="fractionsPrompt">Multiply those 2 fractions</string>
+    <string name="incorrectFractions">Incorrect! The answer was %d / %d</string>
 </resources>

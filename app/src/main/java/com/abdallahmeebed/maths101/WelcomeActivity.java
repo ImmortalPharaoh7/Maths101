@@ -102,6 +102,8 @@ public class  WelcomeActivity extends AppCompatActivity{
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.greatestCommonDividerButton)) {
             startActivity(new Intent(this, GCDActivity.class));
+        } else if (view == findViewById(R.id.fractionsButton)) {
+            startActivity(new Intent(this, FractionsActivity.class));
         }
         fragmentTransaction.commit();
     }

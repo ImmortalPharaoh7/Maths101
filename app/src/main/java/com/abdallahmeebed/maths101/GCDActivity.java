@@ -25,7 +25,7 @@ public class GCDActivity extends AppCompatActivity {
 
     }
 
-    public int calcGCD(int firstNum, int secondNum) {
+    public static int calcGCD(int firstNum, int secondNum) {
         if (secondNum == 0) return firstNum;
         return calcGCD(secondNum, firstNum % secondNum);
     }
