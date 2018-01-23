@@ -137,7 +137,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/validateGCDButton"
+            android:id="@+id/validateFractionsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"

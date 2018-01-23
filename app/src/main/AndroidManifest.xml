@@ -24,6 +24,9 @@
         <activity
             android:name=".FractionsActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstDegreeActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -104,6 +104,8 @@ public class  WelcomeActivity extends AppCompatActivity{
             startActivity(new Intent(this, GCDActivity.class));
         } else if (view == findViewById(R.id.fractionsButton)) {
             startActivity(new Intent(this, FractionsActivity.class));
+        } else if (view == findViewById(R.id.firstDegreeEquationButton)) {
+            startActivity(new Intent(this, FirstDegreeActivity.class));
         }
         fragmentTransaction.commit();
     }

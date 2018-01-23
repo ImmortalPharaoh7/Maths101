@@ -43,4 +43,7 @@
     <string name="incorrectGCD">Incorrect! The answer was %d</string>
     <string name="fractionsPrompt">Multiply those 2 fractions</string>
     <string name="incorrectFractions">Incorrect! The answer was %d / %d</string>
+    <string name="firstDegreePrompt">Find the value of a</string>
+    <string name="firstDegreeLine">%d a + %d = %d a + %d</string>
+    <string name="incorrectFirstDegree">Incorrect! The answer is %1$,.2f</string>
 </resources>

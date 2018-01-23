@@ -46,7 +46,7 @@ public class GCDActivity extends AppCompatActivity {
 
     public void checkAnswer(View view) {
         try {
-            EditText answerEditText = findViewById(R.id.numberQuestionAnswer);
+            EditText answerEditText = findViewById(R.id.gcdAnswer);
             int answerUser = Integer.parseInt(answerEditText.getText().toString());
 
             if (answerUser == gcd) {
