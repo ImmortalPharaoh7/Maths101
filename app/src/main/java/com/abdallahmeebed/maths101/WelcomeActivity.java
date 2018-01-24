@@ -106,6 +106,8 @@ public class  WelcomeActivity extends AppCompatActivity{
             startActivity(new Intent(this, FractionsActivity.class));
         } else if (view == findViewById(R.id.firstDegreeEquationButton)) {
             startActivity(new Intent(this, FirstDegreeActivity.class));
+        } else if (view == findViewById(R.id.arithmeticProgressionButton)) {
+            startActivity(new Intent(this, ArithmeticProgressionActivity.class));
         }
         fragmentTransaction.commit();
     }

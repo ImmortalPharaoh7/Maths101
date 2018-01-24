@@ -13,7 +13,7 @@
     <string name="proportionalityButton">Proportionality</string>
     <string name="firstDegreeEquationButton">First Degree Equations</string>
     <string name="secondDegreeEquationButton">Second Degree Equations</string>
-    <string name="trigonometryButton">Trigonometry</string>
+    <string name="arithmeticProgressionButton">Arithmetic Progression</string>
     <string name="greatestCommonDividerButton">Greatest Common Divider</string>
     <string name="trigonometricFunctionsButton">Trigonometric Functions</string>
     <string name="probabilityButton">Probability</string>
@@ -24,7 +24,7 @@
     <string name="question30Prompt">An urn contains an even number of balls; half of the balls in the urn are white and the other half black. If three balls are drawn at the same time from the urn, the probability of drawing 3 balls of the same color is 20%. How many balls are there in the urn before any balls are drawn?</string>
     <string name="validateButton">Validate</string>
     <string name="correct">Correct!</string>
-    <string name="emptyNumber">Please enter a number between 0 and (2^32)-1</string>
+    <string name="emptyNumber">Please enter a number between -(2^32) and (2^32)-1</string>
     <string name="hintNumber">Enter your answer here</string>
     <string name="instructions">Maths 101 is a game about showing different uses of maths in real life situations. Start playing by selecting a level and a subject you want to test your knowledge on. You can later prove your skills by applying your knowledge into real life situations by pressing the \"Real Life Situations\" under the level of your choice.\n\nNote: This game requires you to have at least studied some basics of the question you\'re answering as it doesn\'t go through basic methods. Please round your answers to the 2 decimal places.</string>
     <string name="question31Button">Meet me halfway</string>
@@ -46,4 +46,8 @@
     <string name="firstDegreePrompt">Find the value of a</string>
     <string name="firstDegreeLine">%d a + %d = %d a + %d</string>
     <string name="incorrectFirstDegree">Incorrect! The answer is %1$,.2f</string>
+    <string name="arithmeticProgressionPrompt">Find the %d th term to this arithmetic progression</string>
+    <string name="arithmeticProgressionTerm">a1 = %d</string>
+    <string name="arithmeticProgressionReason">r = %d</string>
+    <string name="arithmeticProgressionIncorrect">Incorrect! The answer was %d</string>
 </resources>

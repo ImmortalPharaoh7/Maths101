@@ -58,11 +58,12 @@ public class FractionsActivity extends AppCompatActivity {
 
             if (numUser == numAns && denumUser == denumAns) {
                 Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_LONG).show();
-                genNewNumbers();
             } else {
                 Toast.makeText(this, String.format(getString(R.string.incorrectFractions), numAns, denumAns), Toast.LENGTH_SHORT).show();
-                genNewNumbers();
             }
+            genNewNumbers();
+            numAnsEditText.setText("");
+            denumAnsEditText.setText("");
         } catch (Exception e) {
             Toast.makeText(this, getString(R.string.emptyNumber), Toast.LENGTH_SHORT).show();
         }

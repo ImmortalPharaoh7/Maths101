@@ -56,11 +56,11 @@ public class FirstDegreeActivity extends AppCompatActivity {
 
             if (userAns == aAns) {
                 Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_LONG).show();
-                genNewNumbers();
             } else {
                 Toast.makeText(this, String.format(getString(R.string.incorrectFirstDegree), aAns), Toast.LENGTH_LONG).show();
-                genNewNumbers();
             }
+            genNewNumbers();
+            answerEditText.setText("");
         } catch (Exception e) {
             System.out.println(e.toString());
             Toast.makeText(this, getString(R.string.emptyNumber), Toast.LENGTH_SHORT).show();

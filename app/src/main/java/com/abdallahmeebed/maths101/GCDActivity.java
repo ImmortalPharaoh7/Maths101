@@ -51,11 +51,11 @@ public class GCDActivity extends AppCompatActivity {
 
             if (answerUser == gcd) {
                 Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_LONG).show();
-                genNewNumbers();
             } else {
                 Toast.makeText(this, String.format(getString(R.string.incorrectGCD), gcd), Toast.LENGTH_LONG).show();
-                genNewNumbers();
             }
+            genNewNumbers();
+            answerEditText.setText("");
         } catch (Exception e) {
             Toast.makeText(this, getString(R.string.emptyNumber), Toast.LENGTH_SHORT).show();
         }

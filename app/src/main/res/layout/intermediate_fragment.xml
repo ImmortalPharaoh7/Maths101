@@ -21,14 +21,14 @@
             android:text="@string/secondDegreeEquationButton" />
 
         <Button
-            android:id="@+id/trigonometryButton"
+            android:id="@+id/arithmeticProgressionButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="20dp"
             android:onClick="welcomeButtonPressed"
-            android:text="@string/trigonometryButton" />
+            android:text="@string/arithmeticProgressionButton" />
 
         <Button
             android:id="@+id/greatestCommonDividerButton"
