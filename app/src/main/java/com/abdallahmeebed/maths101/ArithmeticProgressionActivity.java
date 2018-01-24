@@ -49,7 +49,7 @@ public class ArithmeticProgressionActivity extends AppCompatActivity {
             if (answerUser == answer) {
                 Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_LONG).show();
             } else {
-                Toast.makeText(this, String.format(getString(R.string.arithmeticProgressionIncorrect), answer), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, String.format(getString(R.string.arithmeticProgressionIncorrect), answer), Toast.LENGTH_LONG).show();
             }
             genNewNumbers();
             answerEditText.setText("");

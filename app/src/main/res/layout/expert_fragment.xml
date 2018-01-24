@@ -31,14 +31,14 @@
             android:text="@string/probabilityButton" />
 
         <Button
-            android:id="@+id/calculatingInterestsButton"
+            android:id="@+id/geometricProgressionButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="20dp"
             android:onClick="welcomeButtonPressed"
-            android:text="@string/calculatingInterestsButton" />
+            android:text="@string/geometricProgressionButton" />
 
         <Button
             android:id="@+id/expertLifeButton"

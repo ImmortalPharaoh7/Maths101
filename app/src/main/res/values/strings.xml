@@ -17,7 +17,7 @@
     <string name="greatestCommonDividerButton">Greatest Common Divider</string>
     <string name="trigonometricFunctionsButton">Trigonometric Functions</string>
     <string name="probabilityButton">Probability</string>
-    <string name="calculatingInterestsButton">Calculating Interests</string>
+    <string name="geometricProgressionButton">Geometric Progression</string>
     <string name="lifeQuestionsButton">Real Life Situations</string>
     <string name="title_activity_beginner_life">BeginnerLifeActivity</string>
     <string name="question30Button">The Mysterious Urn</string>
@@ -25,6 +25,7 @@
     <string name="validateButton">Validate</string>
     <string name="correct">Correct!</string>
     <string name="emptyNumber">Please enter a number between -(2^32) and (2^32)-1</string>
+    <string name="emptyNumberLong">Please enter a number between -(2^64) and (2^64)-1</string>
     <string name="hintNumber">Enter your answer here</string>
     <string name="instructions">Maths 101 is a game about showing different uses of maths in real life situations. Start playing by selecting a level and a subject you want to test your knowledge on. You can later prove your skills by applying your knowledge into real life situations by pressing the \"Real Life Situations\" under the level of your choice.\n\nNote: This game requires you to have at least studied some basics of the question you\'re answering as it doesn\'t go through basic methods. Please round your answers to the 2 decimal places.</string>
     <string name="question31Button">Meet me halfway</string>
@@ -50,4 +51,8 @@
     <string name="arithmeticProgressionTerm">a1 = %d</string>
     <string name="arithmeticProgressionReason">r = %d</string>
     <string name="arithmeticProgressionIncorrect">Incorrect! The answer was %d</string>
+    <string name="geometricProgressionPrompt">Find the %d th term to this geometric progression</string>
+    <string name="geometricProgressionTerm">a1 = %d</string>
+    <string name="geometricProgressionReason">r = %d</string>
+    <string name="geometricProgressionIncorrect">Incorrect! The answer was %d</string>
 </resources>
