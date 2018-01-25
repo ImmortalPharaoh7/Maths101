@@ -124,6 +124,8 @@ public class WelcomeActivity extends AppCompatActivity {
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.secondDegreeEquationButton)) {
             startActivity(new Intent(this, SecondDegreeActivity.class));
+        } else if (view == findViewById(R.id.logarithmicEquationButton)) {
+            startActivity(new Intent(this, LogarithmicActivity.class));
         }
         fragmentTransaction.commit();
     }

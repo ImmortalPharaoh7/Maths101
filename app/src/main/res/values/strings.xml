@@ -15,7 +15,7 @@
     <string name="secondDegreeEquationButton">Second Degree Equations</string>
     <string name="arithmeticProgressionButton">Arithmetic Progression</string>
     <string name="greatestCommonDividerButton">Greatest Common Divider</string>
-    <string name="trigonometricFunctionsButton">Trigonometric Functions</string>
+    <string name="logarithmicEquationButton">Simple Logarithmic Equations</string>
     <string name="probabilityButton">Probability</string>
     <string name="geometricProgressionButton">Geometric Progression</string>
     <string name="lifeQuestionsButton">Real Life Situations</string>
@@ -27,7 +27,7 @@
     <string name="emptyNumber">Please enter a number between -(2^32) and (2^32)-1</string>
     <string name="emptyNumberLong">Please enter a number between -(2^64) and (2^64)-1</string>
     <string name="hintNumber">Enter your answer here</string>
-    <string name="instructions">Maths 101 is a game about showing different uses of maths in real life situations. Start playing by selecting a level and a subject you want to test your knowledge on. You can later prove your skills by applying your knowledge into real life situations by pressing the \"Real Life Situations\" under the level of your choice.\n\nNote: This game requires you to have at least studied some basics of the question you\'re answering as it doesn\'t go through basic methods. Please round your answers to the 2 decimal places.</string>
+    <string name="instructions">Maths 101 is a game about showing different uses of maths in real life situations. Start playing by selecting a level and a subject you want to test your knowledge on. You can later prove your skills by applying your knowledge into real life situations by pressing the \"Real Life Situations\" under the level of your choice.\n\nNote: This game requires you to have at least studied some basics of the question you\'re answering as it doesn\'t go through basic methods. Please round your answers to the 2 decimal places. Scientific calculators are allowed</string>
     <string name="question31Button">Meet me halfway</string>
     <string name="question31Prompt">There are two ships some distance apart. The first ship can cover the distance between them in 5 days, while the second ship can cover the same distance in 7 days. If the two ships begin the journey towards each other at the same time, in how many days will they meet? </string>
     <string name="question32Button">The Gold Seller</string>
@@ -67,4 +67,7 @@
     <string name="secondDegree1Incorrect">Incorrect! The answer was  %1$,.2f</string>
     <string name="secondDegree0Incorrect">Incorrect! There were no solutions to this equation</string>
     <string name="secondDegree0Button">There are no solutions to this equation</string>
+    <string name="logarithmicPrompt">Find the value of a</string>
+    <string name="logarithmicLine">log₂ (%d a + %d ) = %d</string>
+    <string name="logarithmicIncorrect">Incorrect! The answer was %1$,.2f</string>
 </resources>
