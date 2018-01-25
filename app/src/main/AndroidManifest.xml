@@ -30,7 +30,12 @@
         <activity
             android:name=".ArithmeticProgressionActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".GeometricProgressionActivity"></activity>
+        <activity
+            android:name=".GeometricProgressionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondDegreeActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

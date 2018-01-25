@@ -122,6 +122,8 @@ public class WelcomeActivity extends AppCompatActivity {
             numberQuestionFragment = new NumberQuestionFragment();
             numberQuestionFragment.setupQuestion(getString(R.string.question38Prompt), 21.82, R.drawable.question38);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.secondDegreeEquationButton)) {
+            startActivity(new Intent(this, SecondDegreeActivity.class));
         }
         fragmentTransaction.commit();
     }

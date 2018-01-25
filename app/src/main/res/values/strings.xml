@@ -52,7 +52,7 @@
     <string name="incorrectFractions">Incorrect! The answer was %d / %d</string>
     <string name="firstDegreePrompt">Find the value of a</string>
     <string name="firstDegreeLine">%d a + %d = %d a + %d</string>
-    <string name="incorrectFirstDegree">Incorrect! The answer is %1$,.2f</string>
+    <string name="incorrectFirstDegree">Incorrect! The answer is  %1$,.2f</string>
     <string name="arithmeticProgressionPrompt">Find the %d th term to this arithmetic progression</string>
     <string name="arithmeticProgressionTerm">a1 = %d</string>
     <string name="arithmeticProgressionReason">r = %d</string>
@@ -61,4 +61,10 @@
     <string name="geometricProgressionTerm">a1 = %d</string>
     <string name="geometricProgressionReason">r = %d</string>
     <string name="geometricProgressionIncorrect">Incorrect! The answer was %d</string>
+    <string name="secondDegreePrompt">Find the value of a (if there is only 1 solution, put the same number twice)</string>
+    <string name="secondDegreeLine">%d a² + %d a + %d = 0</string>
+    <string name="secondDegree2Incorrect">Incorrect! The answers were  %1$,.2f and  %2$,.2f</string>
+    <string name="secondDegree1Incorrect">Incorrect! The answer was  %1$,.2f</string>
+    <string name="secondDegree0Incorrect">Incorrect! There were no solutions to this equation</string>
+    <string name="secondDegree0Button">There are no solutions to this equation</string>
 </resources>
