@@ -73,5 +73,7 @@
     <string name="powersIPrompt">Evaluate this expression</string>
     <string name="powersILine">i^%d</string>
     <string name="powersIIncorrect">Incorrect! The answer was %s</string>
-    <string name="emtpyOption">Please select an answer</string>
+    <string name="emptyOption">Please select an answer</string>
+    <string name="proportionalityPrompt">Complete this proportional table</string>
+    <string name="proportionalityIncorrect">Incorrect! The answer was %1$,.2f</string>
 </resources>

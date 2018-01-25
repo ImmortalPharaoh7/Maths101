@@ -39,7 +39,8 @@
         <activity
             android:name=".LogarithmicActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".PowersIActivity"></activity>
+        <activity android:name=".PowersIActivity" />
+        <activity android:name=".ProportionalityActivity"></activity>
     </application>
 
 </manifest>

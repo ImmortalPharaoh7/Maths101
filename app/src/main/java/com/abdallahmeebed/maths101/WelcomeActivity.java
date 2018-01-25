@@ -21,6 +21,8 @@ import com.abdallahmeebed.maths101.fragments.WelcomeFragment;
 public class WelcomeActivity extends AppCompatActivity {
 
 
+    NumberQuestionFragment numberQuestionFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +38,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
         //setContentView(R.layout.activity_welcome);
     }
-
-    NumberQuestionFragment numberQuestionFragment;
 
     //gets the fragments for all the menu items
     public void welcomeButtonPressed(View view) {
@@ -128,6 +128,8 @@ public class WelcomeActivity extends AppCompatActivity {
             startActivity(new Intent(this, LogarithmicActivity.class));
         } else if (view == findViewById(R.id.powersOfIButton)) {
             startActivity(new Intent(this, PowersIActivity.class));
+        } else if (view == findViewById(R.id.proportionalityButton)) {
+            startActivity(new Intent(this, ProportionalityActivity.class));
         }
         fragmentTransaction.commit();
     }

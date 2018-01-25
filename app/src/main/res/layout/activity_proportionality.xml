@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abdallahmeebed.maths101.ProportionalityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="@string/proportionalityPrompt"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                android:id="@+id/proportionalityNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_row="0"
+                android:background="@android:color/white"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/proportionalityNum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_row="1"
+                android:background="@android:color/white"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/proportionalityNum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_row="0"
+                android:background="@android:color/white"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/proportionalityAnswer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_row="1"
+                android:background="@android:color/white"
+                android:ems="15"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/validateGCDButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="checkAnswer"
+            android:text="@string/validateButton" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

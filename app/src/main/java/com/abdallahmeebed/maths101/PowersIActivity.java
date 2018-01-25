@@ -13,11 +13,10 @@ import java.util.Random;
 
 public class PowersIActivity extends AppCompatActivity {
 
+    private final int BOUNDARY = 101;
     TextView questionTextView;
-
     private int power;
     private String answer;
-    private final int BOUNDARY = 101;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +63,7 @@ public class PowersIActivity extends AppCompatActivity {
             radioPowersIButton.setChecked(false);
         } catch (Exception e) {
             System.out.println(e.toString());
-            Toast.makeText(this, getString(R.string.emtpyOption), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.emptyOption), Toast.LENGTH_SHORT).show();
         }
     }
 }
