@@ -73,7 +73,7 @@
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="20dp"
                 android:onClick="welcomeButtonPressed"
-                android:text="@string/question30Button" />
+                android:text="@string/question35Button" />
 
             <Button
                 android:id="@+id/question36Button"
@@ -83,7 +83,7 @@
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="20dp"
                 android:onClick="welcomeButtonPressed"
-                android:text="@string/question30Button" />
+                android:text="@string/question36Button" />
 
             <Button
                 android:id="@+id/question37Button"
@@ -93,7 +93,7 @@
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="20dp"
                 android:onClick="welcomeButtonPressed"
-                android:text="@string/question30Button" />
+                android:text="@string/question37Button" />
 
             <Button
                 android:id="@+id/question38Button"
@@ -103,16 +103,16 @@
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="20dp"
                 android:onClick="welcomeButtonPressed"
-                android:text="@string/question30Button" />
+                android:text="@string/question38Button" />
 
             <Button
                 android:id="@+id/backExpertLifeButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
                 android:onClick="welcomeButtonPressed"
                 android:text="@string/backButton" />
 

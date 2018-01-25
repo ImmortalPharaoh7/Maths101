@@ -18,7 +18,7 @@ import com.abdallahmeebed.maths101.fragments.NumberQuestionFragment;
 import com.abdallahmeebed.maths101.fragments.PlayFragment;
 import com.abdallahmeebed.maths101.fragments.WelcomeFragment;
 
-public class  WelcomeActivity extends AppCompatActivity{
+public class WelcomeActivity extends AppCompatActivity {
 
 
     @Override
@@ -40,26 +40,26 @@ public class  WelcomeActivity extends AppCompatActivity{
     NumberQuestionFragment numberQuestionFragment;
 
     //gets the fragments for all the menu items
-    public void welcomeButtonPressed(View view){
+    public void welcomeButtonPressed(View view) {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         // to the play menu
-        if (view == findViewById(R.id.playButton) || view == findViewById(R.id.backBeginnerButton)|| view == findViewById(R.id.backIntermediateButton) || view == findViewById(R.id.backExpertButton) || view == findViewById(R.id.backNumberQuestion) || view == findViewById(R.id.backIncorrectLifeButton)){
+        if (view == findViewById(R.id.playButton) || view == findViewById(R.id.backBeginnerButton) || view == findViewById(R.id.backIntermediateButton) || view == findViewById(R.id.backExpertButton) || view == findViewById(R.id.backNumberQuestion) || view == findViewById(R.id.backIncorrectLifeButton)) {
             PlayFragment playFragment = new PlayFragment();
             fragmentTransaction.replace(android.R.id.content, playFragment);
 
-        // to main menu
-        }else if (view == findViewById(R.id.backPlayButton) || view == findViewById(R.id.backInstructionsButton)){
+            // to main menu
+        } else if (view == findViewById(R.id.backPlayButton) || view == findViewById(R.id.backInstructionsButton)) {
             WelcomeFragment welcomeFragment = new WelcomeFragment();
             fragmentTransaction.replace(android.R.id.content, welcomeFragment);
-        }else if (view == findViewById(R.id.beginnerButton) || view == findViewById(R.id.backBeginnerLifeButton)){
+        } else if (view == findViewById(R.id.beginnerButton) || view == findViewById(R.id.backBeginnerLifeButton)) {
             BeginnerFragment beginnerFragment = new BeginnerFragment();
             fragmentTransaction.replace(android.R.id.content, beginnerFragment);
-        }else if (view == findViewById(R.id.intermediateButton) || view == findViewById(R.id.backIntermediateLifeButton)){
+        } else if (view == findViewById(R.id.intermediateButton) || view == findViewById(R.id.backIntermediateLifeButton)) {
             IntermediateFragment intermediateFragment = new IntermediateFragment();
             fragmentTransaction.replace(android.R.id.content, intermediateFragment);
-        }else if (view == findViewById(R.id.expertButton) || view == findViewById(R.id.backExpertLifeButton)){
+        } else if (view == findViewById(R.id.expertButton) || view == findViewById(R.id.backExpertLifeButton)) {
             ExpertFragment expertFragment = new ExpertFragment();
             fragmentTransaction.replace(android.R.id.content, expertFragment);
         } else if (view == findViewById(R.id.beginnerLifeButton)) {
@@ -71,34 +71,34 @@ public class  WelcomeActivity extends AppCompatActivity{
         } else if (view == findViewById(R.id.expertLifeButton)) {
             ExpertLifeFragment expertLifeFragment = new ExpertLifeFragment();
             fragmentTransaction.replace(android.R.id.content, expertLifeFragment);
-        } else if (view == findViewById(R.id.question30Button)){
+        } else if (view == findViewById(R.id.question30Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
             numberQuestionFragment.setupQuestion(getString(R.string.question30Prompt), 16, R.drawable.question30);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
-        } else if (view == findViewById(R.id.numberQuestionValidate)){
+        } else if (view == findViewById(R.id.numberQuestionValidate)) {
             numberQuestionFragment.checkAnswer();
-        } else if (view == findViewById(R.id.instructionsButton)){
+        } else if (view == findViewById(R.id.instructionsButton)) {
             InstructionsFragment instructionsFragment = new InstructionsFragment();
             fragmentTransaction.replace(android.R.id.content, instructionsFragment);
-        } else if (view == findViewById(R.id.question31Button)){
+        } else if (view == findViewById(R.id.question31Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question31Prompt), 2.92);
+            numberQuestionFragment.setupQuestion(getString(R.string.question31Prompt), 2.92, R.drawable.question31);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
-        } else if (view == findViewById(R.id.question32Button)){
+        } else if (view == findViewById(R.id.question32Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question32Prompt), 4);
+            numberQuestionFragment.setupQuestion(getString(R.string.question32Prompt), 4, R.drawable.question32);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
-        } else if (view == findViewById(R.id.question33Button)){
+        } else if (view == findViewById(R.id.question33Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question33Prompt), 382);
+            numberQuestionFragment.setupQuestion(getString(R.string.question33Prompt), 382, R.drawable.question33);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
-        } else if (view == findViewById(R.id.question34Button)){
+        } else if (view == findViewById(R.id.question34Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question34Prompt), 6);
+            numberQuestionFragment.setupQuestion(getString(R.string.question34Prompt), 6, R.drawable.question34);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
-        } else if (view == findViewById(R.id.question35Button)){
+        } else if (view == findViewById(R.id.question35Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question35Prompt), 22);
+            numberQuestionFragment.setupQuestion(getString(R.string.question35Prompt), 22, R.drawable.question35);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.greatestCommonDividerButton)) {
             startActivity(new Intent(this, GCDActivity.class));
@@ -110,6 +110,18 @@ public class  WelcomeActivity extends AppCompatActivity{
             startActivity(new Intent(this, ArithmeticProgressionActivity.class));
         } else if (view == findViewById(R.id.geometricProgressionButton)) {
             startActivity(new Intent(this, GeometricProgressionActivity.class));
+        } else if (view == findViewById(R.id.question36Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question36Prompt), 6, R.drawable.question36);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question37Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question37Prompt), 11.52, R.drawable.question37);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question38Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question38Prompt), 21.82, R.drawable.question38);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         }
         fragmentTransaction.commit();
     }

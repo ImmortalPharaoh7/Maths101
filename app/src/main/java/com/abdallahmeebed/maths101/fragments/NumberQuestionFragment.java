@@ -6,6 +6,7 @@ import android.app.FragmentTransaction;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class NumberQuestionFragment extends Fragment {
         View view = inflater.inflate(R.layout.number_question_fragment, container, false);
         questionTextView = view.findViewById(R.id.numberQuestionPrompt);
         questionTextView.setText(question);
+        questionTextView.setMovementMethod(new ScrollingMovementMethod());
         validateButton = view.findViewById(R.id.numberQuestionValidate);
         return view;
     }
@@ -52,7 +54,7 @@ public class NumberQuestionFragment extends Fragment {
         if (valableClick) {
            try{
                EditText answerEditText = getView().findViewById(R.id.numberQuestionAnswer);
-               int answerUser = Integer.parseInt(answerEditText.getText().toString());
+               double answerUser = Double.parseDouble(answerEditText.getText().toString());
 
                if (answerUser == answer) {
 

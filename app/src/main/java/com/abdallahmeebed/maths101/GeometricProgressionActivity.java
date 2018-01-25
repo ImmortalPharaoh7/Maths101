@@ -16,7 +16,7 @@ public class GeometricProgressionActivity extends AppCompatActivity {
     private int promptNum, term1Num, reasonNum;
     private long answer;
 
-    private final int PROMPT_BOUNDARY = 10, REASON_BOUNDARY = 20, TERM1_BOUNDARY = 50;
+    private final int PROMPT_BOUNDARY = 8, REASON_BOUNDARY = 6, TERM1_BOUNDARY = 25;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
