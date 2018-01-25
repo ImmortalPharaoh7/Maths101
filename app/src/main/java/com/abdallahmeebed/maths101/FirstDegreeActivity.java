@@ -21,6 +21,7 @@ public class FirstDegreeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_degree);
+        questionTextView = findViewById(R.id.firstDegreeLine);
         genNewNumbers();
     }
 
@@ -33,7 +34,7 @@ public class FirstDegreeActivity extends AppCompatActivity {
 
         checkUnknown();
 
-        questionTextView = findViewById(R.id.firstDegreeLine);
+
         questionTextView.setText(String.format(getString(R.string.firstDegreeLine), a1, c1, a2, c2));
 
         // putting unknown in a side, the constants on the other

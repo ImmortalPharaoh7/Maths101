@@ -21,7 +21,7 @@ public class LogarithmicActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logarithmic);
-
+        questionTextView = findViewById(R.id.logarithmicLine);
         genNewNumbers();
     }
 
@@ -31,7 +31,6 @@ public class LogarithmicActivity extends AppCompatActivity {
         b = random.nextInt(BOUNDARYAB) + RANGEAB;
         c = random.nextInt(BOUNDARYC) + 1;
 
-        questionTextView = findViewById(R.id.logarithmicLine);
         questionTextView.setText(String.format(getString(R.string.logarithmicLine), a, b, c));
 
         checkA();

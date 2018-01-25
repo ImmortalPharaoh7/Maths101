@@ -23,6 +23,9 @@ public class GeometricProgressionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geometric_progression);
 
+        promptTextView = findViewById(R.id.geometricPrompt);
+        term1TextView = findViewById(R.id.geometricTerm);
+        reasonTextView = findViewById(R.id.geometricReason);
         genNewNumbers();
     }
 
@@ -31,10 +34,6 @@ public class GeometricProgressionActivity extends AppCompatActivity {
         promptNum = random.nextInt(PROMPT_BOUNDARY) + 3;
         term1Num = random.nextInt(TERM1_BOUNDARY) + 1;
         reasonNum = random.nextInt(REASON_BOUNDARY) + 1;
-
-        promptTextView = findViewById(R.id.geometricPrompt);
-        term1TextView = findViewById(R.id.geometricTerm);
-        reasonTextView = findViewById(R.id.geometricReason);
 
         promptTextView.setText(String.format(getString(R.string.geometricProgressionPrompt), promptNum));
         term1TextView.setText(String.format(getString(R.string.geometricProgressionTerm), term1Num));

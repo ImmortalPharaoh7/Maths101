@@ -21,14 +21,14 @@
             android:text="@string/logarithmicEquationButton" />
 
         <Button
-            android:id="@+id/probabilityButton"
+            android:id="@+id/powersOfIButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="20dp"
             android:onClick="welcomeButtonPressed"
-            android:text="@string/probabilityButton" />
+            android:text="@string/powersOfIButton" />
 
         <Button
             android:id="@+id/geometricProgressionButton"

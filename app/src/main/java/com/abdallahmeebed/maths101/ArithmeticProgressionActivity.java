@@ -21,6 +21,9 @@ public class ArithmeticProgressionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arithmetic_progression);
 
+        promptTextView = findViewById(R.id.arithmeticPrompt);
+        term1TextView = findViewById(R.id.arithmeticTerm);
+        reasonTextView = findViewById(R.id.arithmeticReason);
         genNewNumbers();
     }
 
@@ -29,10 +32,6 @@ public class ArithmeticProgressionActivity extends AppCompatActivity {
         promptNum = random.nextInt(PROMPT_BOUNDARY) + 3;
         term1Num = random.nextInt(TERM1_BOUNDARY) + 1;
         reasonNum = random.nextInt(REASON_BOUNDARY) + 1;
-
-        promptTextView = findViewById(R.id.arithmeticPrompt);
-        term1TextView = findViewById(R.id.arithmeticTerm);
-        reasonTextView = findViewById(R.id.arithmeticReason);
 
         promptTextView.setText(String.format(getString(R.string.arithmeticProgressionPrompt), promptNum));
         term1TextView.setText(String.format(getString(R.string.arithmeticProgressionTerm), term1Num));

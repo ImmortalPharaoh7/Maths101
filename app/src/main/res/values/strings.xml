@@ -16,7 +16,7 @@
     <string name="arithmeticProgressionButton">Arithmetic Progression</string>
     <string name="greatestCommonDividerButton">Greatest Common Divider</string>
     <string name="logarithmicEquationButton">Simple Logarithmic Equations</string>
-    <string name="probabilityButton">Probability</string>
+    <string name="powersOfIButton">Powers of I</string>
     <string name="geometricProgressionButton">Geometric Progression</string>
     <string name="lifeQuestionsButton">Real Life Situations</string>
     <string name="title_activity_beginner_life">BeginnerLifeActivity</string>
@@ -70,4 +70,8 @@
     <string name="logarithmicPrompt">Find the value of a</string>
     <string name="logarithmicLine">log₂ (%d a + %d ) = %d</string>
     <string name="logarithmicIncorrect">Incorrect! The answer was %1$,.2f</string>
+    <string name="powersIPrompt">Evaluate this expression</string>
+    <string name="powersILine">i^%d</string>
+    <string name="powersIIncorrect">Incorrect! The answer was %s</string>
+    <string name="emtpyOption">Please select an answer</string>
 </resources>

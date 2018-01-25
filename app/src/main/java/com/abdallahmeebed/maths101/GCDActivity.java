@@ -21,6 +21,9 @@ public class GCDActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gcd);
 
+        firstNumTextView = findViewById(R.id.firstNumGCD);
+        secondNumTextView = findViewById(R.id.secondNumGCD);
+
         genNewNumbers();
 
     }
@@ -35,8 +38,6 @@ public class GCDActivity extends AppCompatActivity {
         firstNum = random.nextInt(GCD_BOUNDARY) + 1;
         secondNum = random.nextInt(GCD_BOUNDARY) + 1;
 
-        firstNumTextView = findViewById(R.id.firstNumGCD);
-        secondNumTextView = findViewById(R.id.secondNumGCD);
 
         firstNumTextView.setText(String.valueOf(firstNum));
         secondNumTextView.setText(String.valueOf(secondNum));

@@ -22,6 +22,7 @@ public class SecondDegreeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_degree);
 
+        questionTextView = findViewById(R.id.secondDegreeLine);
         genNewNumbers();
     }
 
@@ -32,8 +33,6 @@ public class SecondDegreeActivity extends AppCompatActivity {
         c = random.nextInt(BOUNDARYAC) + RANGEAC;
 
         checkA();
-
-        questionTextView = findViewById(R.id.secondDegreeLine);
         questionTextView.setText(String.format(getString(R.string.secondDegreeLine), a, b, c));
 
         calculateSecondDegreeSolutions();

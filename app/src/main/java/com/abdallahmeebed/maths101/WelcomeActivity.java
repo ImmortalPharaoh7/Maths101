@@ -126,6 +126,8 @@ public class WelcomeActivity extends AppCompatActivity {
             startActivity(new Intent(this, SecondDegreeActivity.class));
         } else if (view == findViewById(R.id.logarithmicEquationButton)) {
             startActivity(new Intent(this, LogarithmicActivity.class));
+        } else if (view == findViewById(R.id.powersOfIButton)) {
+            startActivity(new Intent(this, PowersIActivity.class));
         }
         fragmentTransaction.commit();
     }

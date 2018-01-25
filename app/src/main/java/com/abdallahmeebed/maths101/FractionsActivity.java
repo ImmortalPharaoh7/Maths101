@@ -21,6 +21,10 @@ public class FractionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fractions);
 
+        num1TextView = findViewById(R.id.numerator1Fractions);
+        denum1TextView = findViewById(R.id.denumerator1Fractions);
+        num2TextView = findViewById(R.id.numerator2Fractions);
+        denum2TextView = findViewById(R.id.denumerator2Fractions);
         genNewNumbers();
     }
 
@@ -32,10 +36,6 @@ public class FractionsActivity extends AppCompatActivity {
         denum1 = random.nextInt(FRACTIONS_BOUNDARY) + 1;
         denum2 = random.nextInt(FRACTIONS_BOUNDARY) + 1;
 
-        num1TextView = findViewById(R.id.numerator1Fractions);
-        denum1TextView = findViewById(R.id.denumerator1Fractions);
-        num2TextView = findViewById(R.id.numerator2Fractions);
-        denum2TextView = findViewById(R.id.denumerator2Fractions);
 
         num1TextView.setText(String.valueOf(num1));
         denum1TextView.setText(String.valueOf(denum1));
