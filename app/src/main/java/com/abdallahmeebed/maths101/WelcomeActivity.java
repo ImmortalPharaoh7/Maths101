@@ -3,6 +3,7 @@ package com.abdallahmeebed.maths101;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,6 +16,7 @@ import com.abdallahmeebed.maths101.fragments.InstructionsFragment;
 import com.abdallahmeebed.maths101.fragments.IntermediateFragment;
 import com.abdallahmeebed.maths101.fragments.IntermediateLifeFragment;
 import com.abdallahmeebed.maths101.fragments.NumberQuestionFragment;
+import com.abdallahmeebed.maths101.fragments.OptionsFragment;
 import com.abdallahmeebed.maths101.fragments.PlayFragment;
 import com.abdallahmeebed.maths101.fragments.WelcomeFragment;
 
@@ -22,6 +24,8 @@ public class WelcomeActivity extends AppCompatActivity {
 
 
     NumberQuestionFragment numberQuestionFragment;
+    MediaPlayer backgroundMusic;
+    boolean mutedByUser = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +40,27 @@ public class WelcomeActivity extends AppCompatActivity {
         fragmentTransaction.replace(android.R.id.content, welcomeFragment);
         fragmentTransaction.commit();
 
+        backgroundMusic = MediaPlayer.create(this, R.raw.bit8_power);
+        backgroundMusic.start();
+        backgroundMusic.setLooping(true);
+
         //setContentView(R.layout.activity_welcome);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (backgroundMusic.isPlaying()) {
+            backgroundMusic.pause();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!backgroundMusic.isPlaying() && !mutedByUser) {
+            backgroundMusic.start();
+        }
     }
 
     //gets the fragments for all the menu items
@@ -50,7 +74,7 @@ public class WelcomeActivity extends AppCompatActivity {
             fragmentTransaction.replace(android.R.id.content, playFragment);
 
             // to main menu
-        } else if (view == findViewById(R.id.backPlayButton) || view == findViewById(R.id.backInstructionsButton)) {
+        } else if (view == findViewById(R.id.backPlayButton) || view == findViewById(R.id.backInstructionsButton) || view == findViewById(R.id.backOptionsButton)) {
             WelcomeFragment welcomeFragment = new WelcomeFragment();
             fragmentTransaction.replace(android.R.id.content, welcomeFragment);
         } else if (view == findViewById(R.id.beginnerButton) || view == findViewById(R.id.backBeginnerLifeButton)) {
@@ -202,7 +226,20 @@ public class WelcomeActivity extends AppCompatActivity {
             numberQuestionFragment = new NumberQuestionFragment();
             numberQuestionFragment.setupQuestion(getString(R.string.question18Prompt), 204, R.drawable.question18);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.optionsButton)) {
+            OptionsFragment optionsFragment = new OptionsFragment();
+            fragmentTransaction.replace(android.R.id.content, optionsFragment);
         }
         fragmentTransaction.commit();
+    }
+
+    public void muteBackgroundMusic(View view) {
+        if (backgroundMusic.isPlaying()) {
+            backgroundMusic.pause();
+            mutedByUser = true;
+        } else {
+            backgroundMusic.start();
+            mutedByUser = false;
+        }
     }
 }
