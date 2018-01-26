@@ -16,23 +16,103 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/question1Button"
+                android:id="@+id/question20Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="70dp"
                 android:onClick="welcomeButtonPressed"
-                android:text="Test" />
+                android:text="@string/question20Button" />
 
             <Button
-                android:id="@+id/backIntermediateLifeButton"
+                android:id="@+id/question21Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="20dp"
+                android:onClick="welcomeButtonPressed"
+                android:text="@string/question21Button" />
+
+            <Button
+                android:id="@+id/question22Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="welcomeButtonPressed"
+                android:text="@string/question22Button" />
+
+            <Button
+                android:id="@+id/question23Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="welcomeButtonPressed"
+                android:text="@string/question23Button" />
+
+            <Button
+                android:id="@+id/question24Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="welcomeButtonPressed"
+                android:text="@string/question24Button" />
+
+            <Button
+                android:id="@+id/question25Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="welcomeButtonPressed"
+                android:text="@string/question25Button" />
+
+            <Button
+                android:id="@+id/question26Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="welcomeButtonPressed"
+                android:text="@string/question36Button" />
+
+            <Button
+                android:id="@+id/question27Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="welcomeButtonPressed"
+                android:text="@string/question27Button" />
+
+            <Button
+                android:id="@+id/question28Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="welcomeButtonPressed"
+                android:text="@string/question28Button" />
+
+            <Button
+                android:id="@+id/backIntermediateLifeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
                 android:onClick="welcomeButtonPressed"
                 android:text="@string/backButton" />
 

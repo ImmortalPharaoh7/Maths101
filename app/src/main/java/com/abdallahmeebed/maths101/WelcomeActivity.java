@@ -130,6 +130,42 @@ public class WelcomeActivity extends AppCompatActivity {
             startActivity(new Intent(this, PowersIActivity.class));
         } else if (view == findViewById(R.id.proportionalityButton)) {
             startActivity(new Intent(this, ProportionalityActivity.class));
+        } else if (view == findViewById(R.id.question20Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question20Prompt), 64, R.drawable.question20);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question21Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question21Prompt), 64, R.drawable.question21);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question22Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question22Prompt), 64, R.drawable.question22);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question23Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question23Prompt), 64, R.drawable.question23);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question24Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question24Prompt), 64, R.drawable.question24);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question25Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question25Prompt), 64, R.drawable.question25);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question26Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question26Prompt), 64, R.drawable.question26);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question27Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question27Prompt), 64, R.drawable.question27);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question28Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question28Prompt), 64, R.drawable.question28);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         }
         fragmentTransaction.commit();
     }

@@ -76,4 +76,22 @@
     <string name="emptyOption">Please select an answer</string>
     <string name="proportionalityPrompt">Complete this proportional table</string>
     <string name="proportionalityIncorrect">Incorrect! The answer was %1$,.2f</string>
+    <string name="question20Button">Race to the fountain</string>
+    <string name="question20Prompt">There are two towers: one is 60 meters tall and the other is 80 meters tall; between one tower and the other there is a distance of 100 meters. On the ground there is a water fountain, found between the bases of the two towers. It is known that two birds, leaving simultaneously from the tops of the two towers and flying with the same speed, will reach the fountain at the same moment. What is the distance between the fountain and the shortest tower?</string>
+    <string name="question21Button">The odd marathon</string>
+    <string name="question21Prompt">Two runners run for one hour at a constant speed on a 400 m track: the first runs at 10 km/h, the second at 7 km/h. The two runners start together at the same point. How many times do they cross each other (after the start) if they are running in opposite directions?</string>
+    <string name="question22Button">Quite the taxes</string>
+    <string name="question22Prompt">Stephanie and her friends go and have a dinner at a restaurant, where they pay 150$ for the meal, excluding the 12% taxes and the 11% tip. How much money did they pay overall?</string>
+    <string name="question23Button">Almost an eagle</string>
+    <string name="question23Prompt">At hole number 4, the distance in a straight line between the hole and the starting point is 332 meters. At the first hit, Patrick\'s ball travel 182 meters at an angle of 15°. At the second hit, the ball travels directly to the hole but stops 12 meters before the hole. What distance (in meters) did the ball travel during the second hit?</string>
+    <string name="question24Button">Home from school</string>
+    <string name="question24Prompt">Greg and his friend began their way home from school. Greg\'s house is at 300m north of the school while his friend\'s place is over at 400m east of the school. What is the distance between Greg\'s house and his friend\'s?</string>
+    <string name="question25Button">What a day at Blizzcon</string>
+    <string name="question25Prompt">Arthur went to Blizzcon 2017 which is 9 km east from his house, he then went to visit his grandparents who live who are located exactly at 6 km North of the convention. Arthur remembers after going there that he forgot the gift that he wanted to give them back at this house. What\'s the shortest route possible that Arthur can take?</string>
+    <string name="question26Button">The triangular farm</string>
+    <string name="question26Prompt">A farmer has a triangular shaped farm with 3 corners: the light post, his house and the well, with 530 m between the light post and his house, and 750 m between the post and the well. The angle formed at the post is 53°. What is the perimeter of his farm?</string>
+    <string name="question27Button">The Grand Opening</string>
+    <string name="question27Prompt">Michael and Andrew are 150 m apart. They see a floating balloon on top of a building that just opened the other day. Michael sees the balloon at an angle of 53° while Andrew sees it at 38°. How high is the balloon?</string>
+    <string name="question28Button">Car Dealer</string>
+    <string name="question28Prompt">Abdel Latif wants to buy the new Mercedes which costs 500 000 LE. He makes a deal with the car dealer to give him 80 000 LE as a deposit and pays him 15 000 LE each month. How many months will it take Abdel Latif to fully purchase the car?</string>
 </resources>
