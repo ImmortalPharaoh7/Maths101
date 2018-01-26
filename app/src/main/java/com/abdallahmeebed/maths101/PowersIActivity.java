@@ -43,7 +43,7 @@ public class PowersIActivity extends AppCompatActivity {
             case 2:
                 answer = "-1";
                 break;
-            case 4:
+            case 3:
                 answer = "-i";
                 break;
         }

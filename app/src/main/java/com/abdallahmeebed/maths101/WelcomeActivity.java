@@ -136,35 +136,71 @@ public class WelcomeActivity extends AppCompatActivity {
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.question21Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question21Prompt), 64, R.drawable.question21);
+            numberQuestionFragment.setupQuestion(getString(R.string.question21Prompt), 42, R.drawable.question21);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.question22Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question22Prompt), 64, R.drawable.question22);
+            numberQuestionFragment.setupQuestion(getString(R.string.question22Prompt), 3.86, R.drawable.question22);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.question23Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question23Prompt), 64, R.drawable.question23);
+            numberQuestionFragment.setupQuestion(getString(R.string.question23Prompt), 151.15, R.drawable.question23);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.question24Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question24Prompt), 64, R.drawable.question24);
+            numberQuestionFragment.setupQuestion(getString(R.string.question24Prompt), 500, R.drawable.question24);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.question25Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question25Prompt), 64, R.drawable.question25);
+            numberQuestionFragment.setupQuestion(getString(R.string.question25Prompt), 10, R.drawable.question25);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.question26Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question26Prompt), 64, R.drawable.question26);
+            numberQuestionFragment.setupQuestion(getString(R.string.question26Prompt), 1884.12, R.drawable.question26);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.question27Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question27Prompt), 64, R.drawable.question27);
+            numberQuestionFragment.setupQuestion(getString(R.string.question27Prompt), 56.89, R.drawable.question27);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         } else if (view == findViewById(R.id.question28Button)) {
             numberQuestionFragment = new NumberQuestionFragment();
-            numberQuestionFragment.setupQuestion(getString(R.string.question28Prompt), 64, R.drawable.question28);
+            numberQuestionFragment.setupQuestion(getString(R.string.question28Prompt), 28, R.drawable.question28);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question10Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question10Prompt), 4, R.drawable.question10);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question11Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question11Prompt), 5, R.drawable.question11);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question12Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question12Prompt), 4, R.drawable.question12);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question13Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question13Prompt), 0.75, R.drawable.question13);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question14Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question14Prompt), 11, R.drawable.question14);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question15Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question15Prompt), 25, R.drawable.question15);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question16Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question16Prompt), 700, R.drawable.question16);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question17Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question17Prompt), 186.48, R.drawable.question17);
+            fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
+        } else if (view == findViewById(R.id.question18Button)) {
+            numberQuestionFragment = new NumberQuestionFragment();
+            numberQuestionFragment.setupQuestion(getString(R.string.question18Prompt), 204, R.drawable.question18);
             fragmentTransaction.replace(android.R.id.content, numberQuestionFragment);
         }
         fragmentTransaction.commit();
