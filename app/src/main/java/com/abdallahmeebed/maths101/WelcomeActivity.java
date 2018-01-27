@@ -7,9 +7,11 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.abdallahmeebed.maths101.fragments.BeginnerFragment;
 import com.abdallahmeebed.maths101.fragments.BeginnerLifeFragment;
+import com.abdallahmeebed.maths101.fragments.CreditsFragment;
 import com.abdallahmeebed.maths101.fragments.ExpertFragment;
 import com.abdallahmeebed.maths101.fragments.ExpertLifeFragment;
 import com.abdallahmeebed.maths101.fragments.InstructionsFragment;
@@ -23,9 +25,10 @@ import com.abdallahmeebed.maths101.fragments.WelcomeFragment;
 public class WelcomeActivity extends AppCompatActivity {
 
 
+    public static boolean mutedByUser = false;
     NumberQuestionFragment numberQuestionFragment;
     MediaPlayer backgroundMusic;
-    boolean mutedByUser = false;
+    ImageView xMark;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +77,7 @@ public class WelcomeActivity extends AppCompatActivity {
             fragmentTransaction.replace(android.R.id.content, playFragment);
 
             // to main menu
-        } else if (view == findViewById(R.id.backPlayButton) || view == findViewById(R.id.backInstructionsButton) || view == findViewById(R.id.backOptionsButton)) {
+        } else if (view == findViewById(R.id.backPlayButton) || view == findViewById(R.id.backInstructionsButton) || view == findViewById(R.id.backOptionsButton) || view == findViewById(R.id.backCreditsButton)) {
             WelcomeFragment welcomeFragment = new WelcomeFragment();
             fragmentTransaction.replace(android.R.id.content, welcomeFragment);
         } else if (view == findViewById(R.id.beginnerButton) || view == findViewById(R.id.backBeginnerLifeButton)) {
@@ -229,17 +232,23 @@ public class WelcomeActivity extends AppCompatActivity {
         } else if (view == findViewById(R.id.optionsButton)) {
             OptionsFragment optionsFragment = new OptionsFragment();
             fragmentTransaction.replace(android.R.id.content, optionsFragment);
+        } else if (view == findViewById(R.id.creditsButton)) {
+            CreditsFragment creditsFragment = new CreditsFragment();
+            fragmentTransaction.replace(android.R.id.content, creditsFragment);
         }
         fragmentTransaction.commit();
     }
 
     public void muteBackgroundMusic(View view) {
+        xMark = findViewById(R.id.xMarkImageView);
         if (backgroundMusic.isPlaying()) {
             backgroundMusic.pause();
             mutedByUser = true;
+            xMark.setVisibility(View.VISIBLE);
         } else {
             backgroundMusic.start();
             mutedByUser = false;
+            xMark.setVisibility(View.INVISIBLE);
         }
     }
 }

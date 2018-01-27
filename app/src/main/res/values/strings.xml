@@ -31,7 +31,7 @@
     <string name="question31Button">Meet me halfway</string>
     <string name="question31Prompt">There are two ships some distance apart. The first ship can cover the distance between them in 5 days, while the second ship can cover the same distance in 7 days. If the two ships begin the journey towards each other at the same time, in how many days will they meet? </string>
     <string name="question32Button">The Gold Seller</string>
-    <string name="question32Prompt">A  man  sells  two pieces  of gold, which  together weigh one  pound [=  12 ounces]. He  sells  the  first piece  of gold at the price of 68 bezants per pound, and he sells the second piece at 50 bezants per pound [a bezant is a valuable coin]. In total he receives 5 6 bezants. What is the weight [in ounces] of the first piece of gold?</string>
+    <string name="question32Prompt">A  man  sells  two pieces  of gold, which  together weigh one  pound [=  12 ounces]. He  sells  the  first piece  of gold at the price of 68 bezants per pound, and he sells the second piece at 50 bezants per pound [a bezant is a valuable coin]. In total he receives 56 bezants. What is the weight [in ounces] of the first piece of gold?</string>
     <string name="question33Button">The Big Apple Basket</string>
     <string name="question33Prompt">A certain man entered a certain pleasure garden through 7 doors, and he took from there a number of apples; when he wished to leave he had to give the first doorkeeper half of all the apples and one more; to the second doorkeeper he gave half of the remaining apples and one more. He gave to the other 5 doorkeepers similarly, and there was one apple left for him. It is sought how many apples there were that he collected.</string>
     <string name="question34Button">Just keep shuffling</string>
@@ -101,7 +101,7 @@
     <string name="question12Button">Curiosity Killed the Cat</string>
     <string name="question12Prompt">A fly has 6 legs, an the spider 8. 3 flies and 4 spiders have as many legs as 9 chickens and how many cats?</string>
     <string name="question13Button">One pie short</string>
-    <string name="question13Prompt"><![CDATA[Gabriel came into the meeting with 1 pie short, how will they be able to equally distribute 3 pies on 4 person? (The answer should be a number between 0 and 1, &#189; of a pie, etc.)]]></string>
+    <string name="question13Prompt">Gabriel came into the meeting with 1 pie short, how will they be able to equally distribute 3 pies on 4 person? (The answer should be a number between 0 and 1, ½ of a pie for each person, etc.)</string>
     <string name="question14Button">At the grocery store</string>
     <string name="question14Prompt">Simon went to the store and bought 1 kg of tomato and 3 kg of carrots. Knowing that the carrots worth 2 more LE, and he paid 50 LE on his way out, how much does 1 kg of tomato cost?</string>
     <string name="question15Button">A Kind Gift</string>
@@ -112,4 +112,5 @@
     <string name="question17Prompt">Stephanie and her friends go and have a dinner at a restaurant, where they pay 150$ for the meal, excluding the 12% taxes and the 11% tip. How much money did they pay overall?</string>
     <string name="question18Button">At the grocer</string>
     <string name="question18Prompt">Angela bought 5 liters of milk at the cost of 60. How much do 17 liters cost?</string>
+    <string name="credits">A portion of the questions provided in this game are from:\nMediterranean Youth Mathematical Championship (MYMC). <a href="https://www.ictp.it/research/math/mymc-competition.aspx">Link</a>\n\nLe Kangourou des Mathématiques. <a href="http://www.mathkang.org/concours/suj&amp;sol2017.html">Link</a>\n\nMusic by HeatleyBros:\n<a href="https://www.youtube.com/watch?v=UJ9NbyPFTvY">8 Bit Power</a>\n<a href="https://www.youtube.com/watch?v=TiE9Vvmlxew">8 Bit Summer</a>\n\nIcon made by: <a href="https://www.flaticon.com/authors/popcorns-arts">Popcorns Art</a>\n\nPlease consider filling <a href="https://goo.gl/forms/enWDxRhWiEhjdpeu1">this form</a> for feedback</string>
 </resources>

@@ -1,7 +1,8 @@
 package com.abdallahmeebed.maths101;
 
-import android.support.v7.app.AppCompatActivity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -9,17 +10,23 @@ import android.widget.Toast;
 
 import java.util.Random;
 
+import static com.abdallahmeebed.maths101.WelcomeActivity.mutedByUser;
+
 public class FractionsActivity extends AppCompatActivity {
 
-    TextView num1TextView, denum1TextView, num2TextView, denum2TextView;
-
-    private int num1, denum1, num2, denum2, numAns, denumAns;
     private final int FRACTIONS_BOUNDARY = 20;
+    TextView num1TextView, denum1TextView, num2TextView, denum2TextView;
+    MediaPlayer algorithmMusic;
+    private int num1, denum1, num2, denum2, numAns, denumAns;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fractions);
+
+        algorithmMusic = MediaPlayer.create(this, R.raw.bit8_summer);
+        if (!mutedByUser) algorithmMusic.start();
+        algorithmMusic.setLooping(true);
 
         num1TextView = findViewById(R.id.numerator1Fractions);
         denum1TextView = findViewById(R.id.denumerator1Fractions);
@@ -66,6 +73,22 @@ public class FractionsActivity extends AppCompatActivity {
             denumAnsEditText.setText("");
         } catch (Exception e) {
             Toast.makeText(this, getString(R.string.emptyNumber), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (algorithmMusic.isPlaying()) {
+            algorithmMusic.pause();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!algorithmMusic.isPlaying() && !mutedByUser) {
+            algorithmMusic.start();
         }
     }
 }

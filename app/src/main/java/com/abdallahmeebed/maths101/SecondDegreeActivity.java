@@ -1,7 +1,8 @@
 package com.abdallahmeebed.maths101;
 
-import android.support.v7.app.AppCompatActivity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -9,18 +10,24 @@ import android.widget.Toast;
 
 import java.util.Random;
 
+import static com.abdallahmeebed.maths101.WelcomeActivity.mutedByUser;
+
 public class SecondDegreeActivity extends AppCompatActivity {
 
+    private final int BOUNDARYAC = 20, RANGEAC = -10, BOUNDARYB = 40, RANGEB = -20;
     TextView questionTextView;
-
+    MediaPlayer algorithmMusic;
     private int a, b, c, numberOfSolutions; // just like in class
     private double a1, a2; //answers
-    private final int BOUNDARYAC = 20, RANGEAC = -10, BOUNDARYB = 40, RANGEB = -20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_degree);
+
+        algorithmMusic = MediaPlayer.create(this, R.raw.bit8_summer);
+        if (!mutedByUser) algorithmMusic.start();
+        algorithmMusic.setLooping(true);
 
         questionTextView = findViewById(R.id.secondDegreeLine);
         genNewNumbers();
@@ -121,5 +128,21 @@ public class SecondDegreeActivity extends AppCompatActivity {
         genNewNumbers();
         answer1EditText.setText("");
         answer2EditText.setText("");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (algorithmMusic.isPlaying()) {
+            algorithmMusic.pause();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!algorithmMusic.isPlaying() && !mutedByUser) {
+            algorithmMusic.start();
+        }
     }
 }

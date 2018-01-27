@@ -1,7 +1,8 @@
 package com.abdallahmeebed.maths101;
 
-import android.support.v7.app.AppCompatActivity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -9,28 +10,34 @@ import android.widget.Toast;
 
 import java.util.Random;
 
+import static com.abdallahmeebed.maths101.WelcomeActivity.mutedByUser;
+
 public class GCDActivity extends AppCompatActivity {
 
-    TextView firstNumTextView, secondNumTextView;
-
-    private int firstNum, secondNum, gcd;
     private final int GCD_BOUNDARY = 3000;
+    TextView firstNumTextView, secondNumTextView;
+    MediaPlayer algorithmMusic;
+    private int firstNum, secondNum, gcd;
+
+    public static int calcGCD(int firstNum, int secondNum) {
+        if (secondNum == 0) return firstNum;
+        return calcGCD(secondNum, firstNum % secondNum);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gcd);
 
+        algorithmMusic = MediaPlayer.create(this, R.raw.bit8_summer);
+        if (!mutedByUser) algorithmMusic.start();
+        algorithmMusic.setLooping(true);
+
         firstNumTextView = findViewById(R.id.firstNumGCD);
         secondNumTextView = findViewById(R.id.secondNumGCD);
 
         genNewNumbers();
 
-    }
-
-    public static int calcGCD(int firstNum, int secondNum) {
-        if (secondNum == 0) return firstNum;
-        return calcGCD(secondNum, firstNum % secondNum);
     }
 
     public void genNewNumbers() {
@@ -59,6 +66,22 @@ public class GCDActivity extends AppCompatActivity {
             answerEditText.setText("");
         } catch (Exception e) {
             Toast.makeText(this, getString(R.string.emptyNumber), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (algorithmMusic.isPlaying()) {
+            algorithmMusic.pause();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!algorithmMusic.isPlaying() && !mutedByUser) {
+            algorithmMusic.start();
         }
     }
 }

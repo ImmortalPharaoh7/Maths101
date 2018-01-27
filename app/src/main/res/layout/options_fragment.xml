@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/inside_imageview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -21,12 +21,23 @@
             android:onClick="muteBackgroundMusic"
             app:srcCompat="@drawable/headphone" />
 
+        <ImageView
+            android:id="@+id/xMarkImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/inside_imageview"
+            android:layout_alignLeft="@id/inside_imageview"
+            android:layout_alignRight="@id/inside_imageview"
+            android:layout_alignTop="@id/inside_imageview"
+            android:scaleType="fitXY"
+            android:src="@drawable/xmark"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/backOptionsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView"
+            android:layout_below="@+id/inside_imageview"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
