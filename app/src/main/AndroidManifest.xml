@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_abacus"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_abacus_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -39,8 +39,12 @@
         <activity
             android:name=".LogarithmicActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".PowersIActivity" />
-        <activity android:name=".ProportionalityActivity"></activity>
+        <activity
+            android:name=".PowersIActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProportionalityActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
